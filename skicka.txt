@@ -1,0 +1,9 @@
+wget https://dl.google.com/go/go1.9.2.linux-amd64.tar.gz
+tar -C /usr/local/ -xzf go1.9.2.linux-amd64.tar.gz
+ export PATH=$PATH:/usr/local/go/bin
+go get github.com/google/skicka
+export PATH=$PATH:~/go/bin
+export GOPATH=~/go
+go get github.com/google/skicka
+ skicka init
+skicka -no-browser-auth ls
